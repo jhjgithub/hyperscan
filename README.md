@@ -15,6 +15,31 @@ Hyperscan is typically used in a DPI library stack.
 Information on building the Hyperscan library and using its API is available in
 the [Developer Reference Guide](http://intel.github.io/hyperscan/dev-reference/).
 
+# Compile
+[Reference](https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Hyperscan).
+
+<pre><code>
+
+* install packages
+apt-get install cmake ragel
+apt-get install libboost-dev
+
+sudo apt-get install libsqlite3-dev
+sudo apt-get install libpcap-dev
+
+apt-get install libboost-dev
+
+* build
+git clone https://github.com/01org/hyperscan
+
+cd hyperscan
+mkdir build
+cd build
+cmake -DBUILD_STATIC_AND_SHARED=1 ../
+
+</code></pre>
+
+
 # License
 
 Hyperscan is licensed under the BSD License. See the LICENSE file in the
